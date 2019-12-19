@@ -1,53 +1,149 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>RandM</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  </head>
-  <body>
-    <div id="Navigation">
-        <div>
-            <h1 class="Title">RANDM</h1>
-        </div>
-        <div>
-            <h3 class="Subtitle">Recreation And Mathematics</h3>
-            <h3 class="Subtitle">J. Alexander Carney</h3>
-        </div>
-    </div>
-    <div id="Body">
-        <div>
-            <h3 class="HeaderTitle">Games</h3>
-            <p class="HeaderP">These are all the Game projects I have worked on or am currently working. Every project is available to be played for free without downloading anything. There is also a design journal associated with each project documenting progress and design methods.</p>
-        </div>
-        <div class="Game">
-            <div class="GameImage">
-                <img src="assets/IFZ ICON.jpeg" alt="IFZ">
-            </div>
-            <div class="GameDescription">
-                <h3>Infinite Fire Zombies</h3>
-                <p>Infinite Fire Zombies (working title) is My personal testing ground for the algorithms and techniques I learn In my University Courses. Things like A* search, Decision Trees, and Procedural Content Generation with Simplex Noise. It is heavily inspired by the game Advanced Wars for the Game Boy Advance.</p>
-            </div>
-        </div>
-        <div class="Game">
-            <div class="GameImage">
-                <img src="assets/FTTG ICON.jpeg" alt="FTTG">
-            </div>
-            <div class="GameDescription">
-                <h3>Food Truck: The Game</h3>
-                <p>Food Truck: The Game is a simulation game I worked on with Janel Catajoy and Amanda Leiserowitz. It was created in 5 weeks and was submitted as my final project for the junior level game development course at University of California Santa Cruz.</p>
-            </div>
-        </div>
-        <div class="Game">
-            <div class="GameImage">
-                <img src="assets/SS ICON.jpeg" alt="SS">
-            </div>
-            <div class="GameDescription">
-                <h3>Sisyphus</h3>
-                <p>This game was designed to explore the nature of mortality as well as practice my ability to use Unity to make games. This game was created in 2 weeks and was submitted as my final project for my freshman level game development course at University of California Santa Cruz.</p>
-            </div>
-        </div>
-    </div>
-  </body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>J. Alex Carney</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.navbar {
+				margin-bottom: 0px;
+				border-radius: 0px;
+				background-color: #FF9A3A;
+				color:#FFF;
+				padding: 1% 0;
+				font-size: 1.2em;
+				border: 0;
+			}
+
+			.navbar-brand {
+				float: left;
+				min-height: 55px;
+				padding: 0 15px 5px;
+			}
+
+			.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+				color: #FFF;
+				background-color: #FF9A3A;
+			}
+
+			.navbar-inverse .navbar-nav li a{
+				color:#D9D9D9;
+			}
+
+			.carousel-caption {
+				top:50%;
+				transform: translateY(-50%);
+				text-transform: uppercase;
+			}
+
+			footer {
+				width: 100%;
+				background-color: #FF9A3A;
+				padding: 5%;
+				color: #FFF;
+			}
+
+			.fa {
+				padding: 10px;
+				font-size: 30px;
+				color: #FFF;
+			}
+
+			body {
+				background-color: #FF9A3A;
+			}
+
+			@media (max-width: 600px){
+				.carousel-caption {
+					display: none;
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+		
+		<!-- Start of NavBar -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="assets/BrandLogo.svg" width="50px" height="50px"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Games</a></li>
+						<li><a href="#">Videos</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End of NavBar -->
+
+		<!-- Start of Image Slider -->
+		<div id="MyCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#MyCarousel" data-slide-to="1"></li>
+				<li data-target="#MyCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="assets/PCGBannerImage.png"></img>
+					<div class="carousel-caption">
+						<h1>Procedural Art</h1>
+					</div>
+				</div>
+				<div class="item">
+					<img src="assets/Example1.jpg"></img>
+					<div class="carousel-caption">
+						<h1>Simulations</h1>
+					</div>
+				</div>
+				<div class="item">
+					<img src="assets/Example2.jpg"></img>
+					<div class="carousel-caption">
+						<h1>Video Games</h1>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#MyCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" area-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#MyCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!-- End of Image Slider -->
+		
+		<footer class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Connect</h3>
+					<a href="https://www.youtube.com/channel/UCqvhwNenCUfMJG2nRsja9kw" class="fa fa-youtube"></a>
+					<a href="https://twitter.com/JAlexCarney" class="fa fa-twitter"></a>
+					<a href="https://jalexcarney.itch.io/" class="fa fa-gamepad"></a>
+					<a href="https://github.com/JAlexCarney" class="fa fa-github"></a>
+					<a href="#" class="fa fa-envelope"></a>
+				</div>
+
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
 </html>
